@@ -9,10 +9,24 @@ $(function() {
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
-        if (scroll >= 500) {
+        if (scroll >= 300) {
             header.removeClass('clearHeader').addClass("darkHeader");
         } else {
             header.removeClass("darkHeader").addClass('clearHeader');
+        }
+    });
+});
+
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".stickytop");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 3100) {
+            header.removeClass('stickytop').addClass("stickybottom");
+        } else {
+            header.removeClass("stickybottom").addClass('stickytop');
         }
     });
 });
