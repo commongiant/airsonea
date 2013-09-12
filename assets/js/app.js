@@ -17,20 +17,7 @@ $(function() {
     });
 });
 
-$(function() {
-    //caches a jQuery object containing the header element
-    var header = $(".stickytop");
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
-
-        if (scroll >= 3100) {
-            header.removeClass('stickytop').addClass("stickybottom");
-        } else {
-            header.removeClass("stickybottom").addClass('stickytop');
-        }
-    });
-});
-
+ 
 // classie - class helper functions from bonzo https://github.com/ded/bonzo
 
 ( function( window ) {
