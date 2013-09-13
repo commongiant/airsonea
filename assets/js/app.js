@@ -17,7 +17,75 @@ $(function() {
     });
 });
 
- 
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".stickytop");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 3100) {
+            header.removeClass('stickytop').addClass("stickybottom");
+        } else {
+            header.removeClass("stickybottom").addClass('stickytop');
+        }
+    });
+}); 
+
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".stickytop-screen");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 3100) {
+            header.removeClass('stickytop-screen').addClass("stickybottom-screen");
+        } else {
+            header.removeClass("stickybottom-screen").addClass('stickytop-screen');
+        }
+    });
+}); 
+
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".iPhone");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 600) {
+            header.addClass("iPhone-Two");
+        } else {
+            header.removeClass("iPhone-Two");
+        }
+    });
+}); 
+
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".iPhone");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 1200) {
+            header.addClass("iPhone-Three");
+        } else {
+            header.removeClass("iPhone-Three");
+        }
+    });
+}); 
+
+$(function() {
+    //caches a jQuery object containing the header element
+    var header = $(".iPhone");
+    $(window).scroll(function() {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 1800) {
+            header.addClass("iPhone-Four");
+        } else {
+            header.removeClass("iPhone-Four");
+        }
+    });
+}); 
 // classie - class helper functions from bonzo https://github.com/ded/bonzo
 
 ( function( window ) {
