@@ -703,6 +703,8 @@ body.modal-open,.modal-open .navbar-fixed-top,.modal-open .navbar-fixed-bottom{m
 .touch .video-head{display:none;}
 .touch .video-head-static{background:url(../img/screenshot.jpg) top left no-repeat;background-size:cover;height:400px;width:auto;display:block;}
 .touch .video-inner{color:#ffffff;position:absolute;top:290px;left:10px;}.touch .video-inner h1{margin-bottom:40px;font-size:26px;width:400px;line-height:.06;font-weight:400;}
+.alert-banner{position:absolute;top:100px;right:0;background:#00556f;padding:20px;color:#ffffff;}.alert-banner h4{text-align:right;margin-bottom:2px;}
+.alert-banner .btn{margin-top:5px;}
 .airsonea-lead{margin-top:0;margin-bottom:40px;}
 .airsoneafeatures{color:#ffffff;background:url(../img/bluebg.jpg) center center no-repeat;background-size:cover;padding:30px 0;padding:50px 0;}.airsoneafeatures a{color:#ffffff;}
 .airsoneafeatures h1{margin-bottom:30px;margin-top:0;}
